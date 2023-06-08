@@ -13,54 +13,113 @@
     <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <!-- TODO: Create site logo -->
-      <!--Company Logo in Header-->
-      <div class="headerLogo">
-        <a href="index.html">
-          <img
-            id="peakLogo"
-            src="images/peakLogoFinal2.png"
-            alt="Peak Fitness Training Home"
-          />
-        </a>
-      </div>
-
-      <!-- TODO: Create Navigation -->
-      <!-- TODO: Collapse Navigation for different viewport sizes -->
-      <!--Drop down menu and nav-->
-
-      <nav>
-        <div class="topnav" id="myTopnav">
-          <ul>
-            <li><a href="index.html" class="active">Peak Training</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <!-- TODO: Combine physical and virtual training on single page  -->
-            <li><a href="training.html">Training</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li>
-              <!--Collasped Nav Icon Style-->
-              <a
-                href="javascript:void(0);"
-                style="font-size: 190%"
-                class="icon"
-                onclick="myFunction()"
-                >&#9776;</a
-              >
-            </li>
-          </ul>
+    <!--Container for Body Elements-->
+    <div class="container">
+      <header>
+        <!-- TODO: Create site logo -->
+        <!--Company Logo in Header-->
+        <div class="headerLogo">
+          <a href="index.html">
+            <img
+              id="peakLogo"
+              src="images/peakLogoFinal2.png"
+              aria-hidden="true"
+            />
+          </a>
         </div>
-      </nav>
-    </header>
 
-    <!-- TODO: Add Home about Peak Training -->
+        <!-- TODO: Create Navigation -->
+        <!-- TODO: Collapse Navigation for different viewport sizes -->
+        <!--Drop down menu and nav-->
 
-    <!-- TODO: Add banner -->
+        <nav>
+          <div class="topnav" id="myTopnav">
+            <ul>
+              <li><a href="index.html" class="active">Peak Training</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <!-- TODO: Combine physical and virtual training on single page  -->
+              <li><a href="training.html">Training</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <!--Collasped Nav Icon Style-->
+                <a
+                  href="javascript:void(0);"
+                  style="font-size: 190%"
+                  class="icon"
+                  onclick="myFunction()"
+                  >&#9776;</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- TODO: Add Home about Peak Training -->
+        <article>
+          <h1>Welcome to Peak Training!</h1>
+          <p>The Triangle's Top Fitness Choice</p>
+          <p>
+            Peak Training has been a great place for Triangle area residents to
+            get in shape, relieve stress and make new friends since 1990.
+          </p>
+          <p>
+            Peak offers an excellent fitness facility, a wide variety of
+            constantly updated classes, seasoned physical trainers, reasonable
+            membership rates, and most importantly, ensuring the satisfaction of
+            all our members.
+          </p>
+          <p>
+            We pride ourselves on our catering to clients who want the very
+            best.
+          </p>
+        </article>
 
-    <!-- TODO: Add location map -->
+        <!-- TODO: Add banner -->
+        <section>
+          <p>Come Train With Us!</p>
+        </section>
 
-    <!-- TODO: Add partners and media sidebar -->
+        <!--Peak Training Google Map-->
+        <section>
+          
+          <!-- TODO: remove iframe -->
+          <div id="peakMap" class="multimedia">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.061603366063!2d-78.70613518500554!3d35.6508538392453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8bd3143b0f53%3A0x6db3d71094436c7f!2sWake+Technical+Community+College%2C+9101+Fayetteville+Rd%2C+Raleigh%2C+NC+27603!5e0!3m2!1sen!2sus!4v1543419518011"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
 
-    <!-- TODO: Create Footer -->
+      <!-- TODO: Add partners and media sidebar -->
+      <aside>
+        <!-- Local Partners -->
+        <section></section>
+        <!-- Bundle Deal -->
+        <section></section>
+        <!-- Social Media -->
+        <section></section>
+      </aside>
+
+      <!-- TODO: Create Footer -->
+      <footer>
+        <ul>
+          <li>
+            <a href="mailto:fakeemail@gmail.com">Email us at PEAK</a>
+          </li>
+          <li>
+            <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
+          </li>
+        </ul>
+        <h4>&copy;2023 PEAK Training</h4>
+      </footer>
+    </div>
+    <!-- Navigation Script -->
+    <script src="JavaScript/navScript.js" defer></script>
   </body>
 </html>
