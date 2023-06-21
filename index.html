@@ -11,7 +11,7 @@
     <meta name="author" content="Carlos Robles" />
     <title>Home | Peak Training | Raleigh, NC</title>
     <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
-
+    <!-- TODO: Select Fonts  -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
@@ -22,7 +22,6 @@
     <!--Container for Body Elements-->
     <div class="container">
       <header>
-        <!-- TODO: Create site logo -->
         <!--Company Logo in Header-->
         <div class="headerLogo">
           <a href="index.html">
@@ -34,14 +33,13 @@
           </a>
         </div>
 
-        <!-- TODO: Create Navigation -->
         <!-- TODO: Collapse Navigation for different viewport sizes -->
         <!--Drop down menu and nav-->
 
         <nav>
           <div class="topnav" id="myTopnav">
             <ul>
-              <li><a href="index.html" class="active">Peak Training</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <!-- TODO: Combine physical and virtual training on single page  -->
               <li><a href="training.html">Training</a></li>
@@ -61,7 +59,6 @@
         </nav>
       </header>
       <main>
-        <!-- TODO: Add Home about Peak Training -->
         <article>
           <h1>Welcome to Peak Training!</h1>
           <p>The Triangle's Top Fitness Choice</p>
@@ -72,8 +69,8 @@
           <p>
             Peak offers an excellent fitness facility, a wide variety of
             constantly updated classes, seasoned physical trainers, reasonable
-            membership rates, and most importantly, ensuring the satisfaction of
-            all our members.
+            membership rates, virtual classes and most importantly, ensuring the
+            satisfaction of all our members.
           </p>
           <p>
             We pride ourselves on our catering to clients who want the very
@@ -83,7 +80,9 @@
 
         <!-- TODO: Add banner -->
         <section>
-          <p>Come Train With Us!</p>
+          <p>
+            <a href="#">Come Train With Us!</a>
+          </p>
         </section>
 
         <!--Peak Training MapBox Container-->
@@ -93,21 +92,60 @@
         </section>
       </main>
 
-      <!-- TODO: Add partners and media sidebar -->
       <aside>
-        <!-- Local Partners -->
-        <section></section>
-        <!-- Bundle Deal -->
-        <section></section>
-        <!-- Social Media -->
-        <section></section>
+        <ul>
+          <li>
+            <!-- Local Partners -->
+            <section>
+              <h2>Local Partners</h2>
+              <p>
+                <ul>
+                  <li><a href="https://www.cleanjuice.com/locations/renaissance-village/" target="_blank">Clean Juice</a></li>
+                  <li><a href="http://www.happyandhale.com/locations/" target="_blank">Happy + Hale</a></li>
+                  <li><a href="https://www.coldoffthepress.com/" target="_blank">Cold Off the Press</a></li>
+                  <li><a href="https://www.therefectorycafe.com/" target="_blank">The Refectory Cafe</a></li>
+                </ul>
+              </p>
+            </section>
+          </li>
+          <!-- Bundle Deal -->
+          <li>
+            <section>
+              <h2>5 Session Bundle Ticket:</h2>
+              <p>
+                Ask about our
+                <a href="training.html">5 session personal training bundle</a>!
+                (20% off)
+              </p>
+            </section>
+          </li>
+          <li>
+            <!-- Social Media -->
+            <section>
+              <h2>Follow Us!</h2>
+              <div id="socialLogos">
+                <div id="twitterIcon">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <img class="socialImages" alt="Twitter link" src="images/Twitter_Social_Icon_Rounded_Square_Color.png">
+                  </a>
+                </div>
+                <div id="fbIcon">
+                  <a href="https://www.facebook.com" target="_blank">
+                    <img class="socialImages" src="images/f-ogo_RGB_HEX-58.png" alt="facebook link">
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
       </aside>
 
-      <!-- TODO: Create Footer -->
       <footer>
         <ul>
           <li>
-            <a href="mailto:fakeemail@gmail.com">Email us at PEAK</a>
+            <a href="mailto:fakeemail@gmail.com"
+              >Email us at Peak@peaktraining.com</a
+            >
           </li>
           <li>
             <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
@@ -121,6 +159,5 @@
     <script src="scripts/navScript.js" defer></script>
     <!-- MapBox API Script  -->
     <script src="scripts/mapScript.js" defer></script>
-    
   </body>
 </html>
