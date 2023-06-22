@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>Home | Peak Training | Raleigh, NC</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +10,14 @@
       content="Peak Training, a physical and virtual training gym located in Raleigh, NC."
     />
     <meta name="author" content="Carlos Robles" />
-    <title>Home | Peak Training | Raleigh, NC</title>
-    <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
     <!-- TODO: Select Fonts  -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
     <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-      rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+    rel="stylesheet"
     />
+    <!-- Website Styles -->
+    <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
   </head>
   <body>
     <!--Container for Body Elements-->
@@ -36,7 +37,7 @@
         <!-- TODO: Collapse Navigation for different viewport sizes -->
         <!--Drop down menu and nav-->
 
-        <nav>
+        <nav role="navigation" aria-label="Main Menu">
           <div class="topnav" id="myTopnav">
             <ul>
               <li><a href="index.html" class="active">Home</a></li>
@@ -58,8 +59,9 @@
           </div>
         </nav>
       </header>
+      
       <main>
-        <article>
+        <section>
           <h1>Welcome to Peak Training!</h1>
           <p>The Triangle's Top Fitness Choice</p>
           <p>
@@ -76,13 +78,11 @@
             We pride ourselves on our catering to clients who want the very
             best.
           </p>
-        </article>
 
         <!-- TODO: Add banner -->
-        <section>
-          <p>
-            <a href="#">Come Train With Us!</a>
-          </p>
+
+            <h3>Come Train With Us!</h3>
+  
         </section>
 
         <!--Peak Training MapBox Container-->
