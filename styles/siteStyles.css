@@ -1,27 +1,125 @@
 @charset "utf-8";
 /* CSS Document */
+
+/* Variables for portfolio's fonts and color themes */
+:root {
+  /* Main font color */
+  --mainFontColor: #000;
+  /* Site Background Color  */
+  --mainBackground: #fff;
+}
+
+/*********** Universal box sizing with inheritance ***********/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
-	margin: 0px;
-	padding: 0px;
-  border: 2px solid red;
+  margin: 0px;
+  padding: 0px;
+
+  /*********** LAYOUT TESTING ***********/
+  /* border: 2px solid red; */
 }
 
 body {
-  background-color: #FFF;
-	width: 100%;
-	margin: 0 auto;
-	min-width: 350px;
-	max-width: 980px;
+  background-color: var(--mainBackground);
+  color: var(--mainFontColor);
+  width: 100%;
+  margin: 0 auto;
+  /* min-width: 350px;
+	max-width: 980px; */
 }
 
-h1, h2, h3 {
-	/* font-family: 'Merriweather', serif; */
-	text-align: center;
+h1,
+h2,
+h3 {
+  /* font-family: 'Merriweather', serif; */
+  text-align: center;
 }
 
-/* Mapbox Styles  */
-#peakMap {
+/*********** Header Styles ***********/
+.logoContainer {
+  width: 100%;
+  /* height: auto; */
+  /* display: inline-block; */
+  background-color: #000;
+  background-image: url(../images/WomanCurl.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 800px auto;
+
+  text-align: center;
+}
+
+/* Peak training logo */
+.headerLogo {
+  margin: 1em auto;
+  width: 100%;
+  /* max-width: 441px; */
+  max-width: 450px;
+  /* min-width: 222px; */
+}
+
+
+
+.middleContainer {
+  min-width: 350px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/*********** Mapbox Styles  ***********/
+/*********** Mapbox Container  ***********/ 
+.mapContain {
+  margin: 0 auto;
+  text-align: center;
   width: 75%;
+} 
+
+#peakMap {
+  /* width: 75%; */
   height: 400px;
-  background-color: gray;
+  /* background-color: gray; */
+}
+
+/********** Aside Styles  **********/
+/* Local Partners  */
+.partnerList {
+  /* list-style-position: inside; */
+  list-style-type: none;
+}
+
+.partnerList a {
+  color: var(--mainFontColor);
+  text-decoration: none;
+}
+
+.partnerList a:hover {
+  border: thin solid #000000;
+  background-color: #082fbe;
+  color: #ffffff;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+/*********** Smaller Viewport Styles  ***********/
+@media (max-width: 850px) {
+  .logoContainer {
+    background-size: 100%;
+  }
+
+  .headerLogo {
+    max-width: 370px;
+    margin: 1em auto;
+  }
+
 }

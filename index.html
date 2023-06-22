@@ -13,53 +13,56 @@
     <!-- TODO: Select Fonts  -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
     <link
-    href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-    rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
     />
     <!-- Website Styles -->
     <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
   </head>
   <body>
-    <!--Container for Body Elements-->
-    <div class="container">
-      <header>
-        <!--Company Logo in Header-->
-        <div class="headerLogo">
-          <a href="index.html">
-            <img
-              id="peakLogo"
-              src="images/peakLogoFinal2.png"
-              aria-hidden="true"
-            />
-          </a>
+
+    <header>
+
+      <!--Company Logo in Header-->
+      <div class="logoContainer"
+      aria-hidden="true"
+      >
+        <a href="index.html">
+          <img
+            class="headerLogo"
+            src="images/peakLogoFinal2.png"
+          />
+        </a>
+      </div>
+
+      <!-- TODO: Collapse Navigation for different viewport sizes -->
+      <!--Drop down menu and nav-->
+
+      <nav role="navigation" aria-label="Main Menu">
+        <div class="topnav" id="myTopnav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- TODO: Combine physical and virtual training on single page  -->
+            <li><a href="training.html">Training</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <!--Collasped Nav Icon Style-->
+              <a
+                href="javascript:void(0);"
+                style="font-size: 190%"
+                class="icon"
+                onclick="myFunction()"
+                >&#9776;</a
+              >
+            </li>
+          </ul>
         </div>
+      </nav>
+    </header>
 
-        <!-- TODO: Collapse Navigation for different viewport sizes -->
-        <!--Drop down menu and nav-->
-
-        <nav role="navigation" aria-label="Main Menu">
-          <div class="topnav" id="myTopnav">
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <!-- TODO: Combine physical and virtual training on single page  -->
-              <li><a href="training.html">Training</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li>
-                <!--Collasped Nav Icon Style-->
-                <a
-                  href="javascript:void(0);"
-                  style="font-size: 190%"
-                  class="icon"
-                  onclick="myFunction()"
-                  >&#9776;</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      
+    <!-- Middle Content Container  -->
+    <div class="middleContainer">
       <main>
         <section>
           <h1>Welcome to Peak Training!</h1>
@@ -79,14 +82,13 @@
             best.
           </p>
 
-        <!-- TODO: Add banner -->
+          <!-- TODO: Add banner -->
 
-            <h3>Come Train With Us!</h3>
-  
+          <h3>Come Train With Us!</h3>
         </section>
 
         <!--Peak Training MapBox Container-->
-        <section>
+        <section class="mapContain">
           <!-- map container -->
           <div id="peakMap"></div>
         </section>
@@ -98,14 +100,32 @@
             <!-- Local Partners -->
             <section>
               <h2>Local Partners</h2>
-              <p>
-                <ul>
-                  <li><a href="https://www.cleanjuice.com/locations/renaissance-village/" target="_blank">Clean Juice</a></li>
-                  <li><a href="http://www.happyandhale.com/locations/" target="_blank">Happy + Hale</a></li>
-                  <li><a href="https://www.coldoffthepress.com/" target="_blank">Cold Off the Press</a></li>
-                  <li><a href="https://www.therefectorycafe.com/" target="_blank">The Refectory Cafe</a></li>
-                </ul>
-              </p>
+              <ul class="partnerList">
+                <li>
+                  <a
+                    href="https://www.cleanjuice.com/locations/renaissance-village/"
+                    target="_blank"
+                    >Clean Juice</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.happyandhale.com/locations/"
+                    target="_blank"
+                    >Happy + Hale</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.coldoffthepress.com/" target="_blank"
+                    >Cold Off the Press</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.therefectorycafe.com/" target="_blank"
+                    >The Refectory Cafe</a
+                  >
+                </li>
+              </ul>
             </section>
           </li>
           <!-- Bundle Deal -->
@@ -126,12 +146,20 @@
               <div id="socialLogos">
                 <div id="twitterIcon">
                   <a href="https://www.twitter.com" target="_blank">
-                    <img class="socialImages" alt="Twitter link" src="images/Twitter_Social_Icon_Rounded_Square_Color.png">
+                    <img
+                      class="socialImages"
+                      alt="Twitter link"
+                      src="images/Twitter_Social_Icon_Rounded_Square_Color.png"
+                    />
                   </a>
                 </div>
                 <div id="fbIcon">
                   <a href="https://www.facebook.com" target="_blank">
-                    <img class="socialImages" src="images/f-ogo_RGB_HEX-58.png" alt="facebook link">
+                    <img
+                      class="socialImages"
+                      src="images/f-ogo_RGB_HEX-58.png"
+                      alt="facebook link"
+                    />
                   </a>
                 </div>
               </div>
@@ -139,21 +167,21 @@
           </li>
         </ul>
       </aside>
-
-      <footer>
-        <ul>
-          <li>
-            <a href="mailto:fakeemail@gmail.com"
-              >Email us at Peak@peaktraining.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
-          </li>
-        </ul>
-        <h4>&copy;2023 PEAK Training</h4>
-      </footer>
     </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="mailto:fakeemail@gmail.com"
+            >Email us at Peak@peaktraining.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
+        </li>
+      </ul>
+      <h4>&copy;2023 PEAK Training</h4>
+    </footer>
 
     <!-- Navigation Script -->
     <script src="scripts/navScript.js" defer></script>
