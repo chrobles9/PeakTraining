@@ -5,6 +5,8 @@
 :root {
   /* Main font color */
   --mainFontColor: #000;
+  /* Header Background color */
+  --headerBackground: #000;
   /* Site Background Color  */
   --mainBackground: #fff;
 }
@@ -33,8 +35,6 @@ body {
   color: var(--mainFontColor);
   width: 100%;
   margin: 0 auto;
-  /* min-width: 350px;
-	max-width: 980px; */
 }
 
 h1,
@@ -49,23 +49,21 @@ h3 {
   width: 100%;
   /* height: auto; */
   /* display: inline-block; */
-  background-color: #000;
+  background-color: var(--headerBackground);
   background-image: url(../images/WomanCurl.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 800px auto;
-
   text-align: center;
 }
-
 /* Peak training logo */
 .headerLogo {
   margin: 1em auto;
   width: 100%;
-  /* max-width: 441px; */
-  max-width: 450px;
-  /* min-width: 222px; */
+  max-width: 440px;
 }
+
+/********** Navigation Styles **********/
 
 
 
@@ -82,10 +80,9 @@ h3 {
   text-align: center;
   width: 75%;
 } 
-
 #peakMap {
   /* width: 75%; */
-  height: 400px;
+  height: 20em;
   /* background-color: gray; */
 }
 
@@ -122,4 +119,5 @@ h3 {
     margin: 1em auto;
   }
 
+ 
 }
