@@ -5,6 +5,8 @@
 :root {
   /* Main font color */
   --mainFontColor: #000;
+  /* Secondary font color */
+  --secondFontColor: #fff;
   /* Header Background color */
   --headerBackground: #000;
   /* Site Background Color  */
@@ -27,7 +29,7 @@ html {
   padding: 0px;
 
   /*********** LAYOUT TESTING ***********/
-  /* border: 2px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -45,28 +47,78 @@ h3 {
 }
 
 /*********** Header Styles ***********/
+/* Logo container with background image  */
 .logoContainer {
   width: 100%;
-  /* height: auto; */
+  height: auto;
   /* display: inline-block; */
   background-color: var(--headerBackground);
-  background-image: url(../images/WomanCurl.jpg);
+  background-image: url(../images/headerPhoto.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 800px auto;
+  background-size: 650px auto;
   text-align: center;
 }
 /* Peak training logo */
 .headerLogo {
   margin: 1em auto;
   width: 100%;
-  max-width: 440px;
+  max-width: 400px;
 }
 
 /********** Navigation Styles **********/
+/* Responsive Navigation Styles */
+.navContainer {
+  background-color: #333;
+  text-align: center;
+  border-top: thin solid #fff; 
+}
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.navList li {
+  float: left;
+}
+
+.navLinks {
+  color: var(--secondFontColor);
+  display: inline-block;
+  text-decoration: none;
+}
+.navLinks:hover {
+  background-color: #555;
+	/* color: #FFFFFF; */
+}
+.menuIcon {
+  display: none;
+}
+.active {
+  background-color: #082FBE;
+	/* text-align: center; */
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Content between navigation and footer  */
 .middleContainer {
   min-width: 350px;
   max-width: 980px;
@@ -112,10 +164,11 @@ h3 {
 @media (max-width: 850px) {
   .logoContainer {
     background-size: 100%;
+    /* width: 100%; */
   }
 
   .headerLogo {
-    max-width: 370px;
+    max-width: 275px;
     margin: 1em auto;
   }
 
