@@ -17,13 +17,11 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -31,14 +29,12 @@ html {
   /*********** LAYOUT TESTING ***********/
   /* border: 1px solid red; */
 }
-
 body {
   background-color: var(--mainBackground);
   color: var(--mainFontColor);
   width: 100%;
   margin: 0 auto;
 }
-
 h1,
 h2,
 h3 {
@@ -51,7 +47,6 @@ h3 {
 .logoContainer {
   width: 100%;
   height: auto;
-  /* display: inline-block; */
   background-color: var(--headerBackground);
   background-image: url(../images/headerPhoto.jpg);
   background-repeat: no-repeat;
@@ -71,59 +66,40 @@ h3 {
 .navContainer {
   background-color: #333;
   text-align: center;
-  border-top: thin solid #fff; 
+  border-top: thin solid #fff;
 }
 .navList {
   list-style-type: none;
-  /* margin: 0; */
-  /* padding: 0; */
-  /* overflow: hidden; */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  width: 100%;
+  overflow: auto;
 }
-
-
-
+.navItem {
+  flex: 1 1 100%;
+}
 .navLinks {
   color: var(--secondFontColor);
-  /* display: inline-block; */
   text-decoration: none;
+  font-size: 1.5em;
+  display: block;
 }
-
-
-.navLinks:hover {
+.navItem:hover {
   background-color: #555;
-	/* color: #FFFFFF; */
 }
-
-.navIcon{
+.navIcon {
   display: none;
 }
-
-.icon {
-  /* display: none; */
-}
+/* .icon {
+  display: none;
+} */
 .active {
-  background-color: #082FBE;
-	/* text-align: center; */
+  background-color: #082fbe;
+  /* text-align: center; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.active:hover {
+  background-color: #de630b;
+}
 
 /* Content between navigation and footer  */
 .middleContainer {
@@ -133,12 +109,12 @@ h3 {
 }
 
 /*********** Mapbox Styles  ***********/
-/*********** Mapbox Container  ***********/ 
+/*********** Mapbox Container  ***********/
 .mapContain {
   margin: 0 auto;
   text-align: center;
   width: 75%;
-} 
+}
 #peakMap {
   /* width: 75%; */
   height: 20em;
@@ -151,12 +127,10 @@ h3 {
   /* list-style-position: inside; */
   list-style-type: none;
 }
-
 .partnerList a {
   color: var(--mainFontColor);
   text-decoration: none;
 }
-
 .partnerList a:hover {
   border: thin solid #000000;
   background-color: #082fbe;
@@ -171,16 +145,12 @@ h3 {
 @media (max-width: 850px) {
   .logoContainer {
     background-size: 100%;
-    /* width: 100%; */
   }
-
   .headerLogo {
     max-width: 275px;
     margin: 1em auto;
   }
-
   .navList {
     flex-direction: column;
   }
- 
 }
