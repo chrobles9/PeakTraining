@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
 /* Variables for portfolio's fonts and color themes */
 :root {
   /* Main font color */
@@ -63,7 +62,7 @@ h3 {
 
 /********** Navigation Styles **********/
 /* Responsive Navigation Styles */
-.navContainer {
+nav {
   background-color: #333;
   text-align: center;
   border-top: thin solid #fff;
@@ -87,12 +86,9 @@ h3 {
 .navItem:hover {
   background-color: #555;
 }
-.navIcon {
+.icon {
   display: none;
 }
-/* .icon {
-  display: none;
-} */
 .active {
   background-color: #082fbe;
   /* text-align: center; */
@@ -143,6 +139,10 @@ h3 {
 
 /*********** Smaller Viewport Styles  ***********/
 @media (max-width: 850px) {
+  /* navigation list hidden with mobile  */
+  .navList {
+    display: none;
+  }
   .logoContainer {
     background-size: 100%;
   }
@@ -152,5 +152,17 @@ h3 {
   }
   .navList {
     flex-direction: column;
+  }
+
+  .icon {
+    display: contents;
+    font-size: 190%;
+  }
+  .icon:hover {
+    background-color: #555;
+
+  }
+  .navList.mobileMenu {
+    display: contents;
   }
 }
