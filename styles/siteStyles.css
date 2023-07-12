@@ -102,6 +102,9 @@ nav {
   min-width: 350px;
   max-width: 980px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*********** Mapbox Styles  ***********/
@@ -139,6 +142,9 @@ nav {
 
 /*********** Smaller Viewport Styles  ***********/
 @media (max-width: 850px) {
+  .middleContainer {
+    flex-direction: column;
+  }
   /* navigation list hidden with mobile  */
   .navList {
     display: none;
