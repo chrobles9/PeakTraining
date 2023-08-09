@@ -31,7 +31,7 @@
       <nav role="navigation" aria-label="Main Menu">
         <!--Collasped Nav Icon Style-->
           <a
-            href="javascript:void(0);"
+            href="javascript:void(0);" id="menuIcon"
             class="navLinks icon"
             onclick="mobileMenu()"
             >&#9776;
@@ -55,17 +55,19 @@
       </nav>
     </header>
 
-    <!-- Middle Content Container  -->
-    <div class="middleContainer">
-      <main>
-        <section>
-          <h1>Welcome to Peak Training!</h1>
-          <p>The Triangle's Top Fitness Choice</p>
-          <p>
-            Peak Training has been a great place for Triangle area residents to
-            get in shape, relieve stress and make new friends since 1990.
-          </p>
-          <p>
+    <!-- Wrapper -->
+    <div class="bodyGrid">
+      <!-- Middle Content Container  -->
+      <div class="middleContainer">
+        <main>
+          <section>
+            <h1>Welcome to Peak Training!</h1>
+            <p>The Triangle's Top Fitness Choice</p>
+            <p>
+              Peak Training has been a great place for Triangle area residents to
+              get in shape, relieve stress and make new friends since 1990.
+            </p>
+            <p>
             Peak offers an excellent fitness facility, a wide variety of
             constantly updated classes, seasoned physical trainers, reasonable
             membership rates, virtual classes and most importantly, ensuring the
@@ -75,20 +77,20 @@
             We pride ourselves on our catering to clients who want the very
             best.
           </p>
-
+          
           <!-- TODO: Add banner -->
-
+          
           <h3>Come Train With Us!</h3>
         </section>
-
+        
         <!--Peak Training MapBox Container-->
         <section class="mapContain">
           <!-- map container -->
           <div id="peakMap"></div>
         </section>
       </main>
-
-      <aside>
+      
+      <aside class="sideContent">
         <ul>
           <li>
             <!-- Local Partners -->
@@ -97,26 +99,26 @@
               <ul class="partnerList">
                 <li>
                   <a
-                    href="https://www.cleanjuice.com/locations/renaissance-village/"
-                    target="_blank"
-                    >Clean Juice</a
+                  href="https://www.cleanjuice.com/locations/renaissance-village/"
+                  target="_blank"
+                  >Clean Juice</a
                   >
                 </li>
                 <li>
                   <a
-                    href="http://www.happyandhale.com/locations/"
-                    target="_blank"
-                    >Happy + Hale</a
+                  href="http://www.happyandhale.com/locations/"
+                  target="_blank"
+                  >Happy + Hale</a
                   >
                 </li>
                 <li>
                   <a href="https://www.coldoffthepress.com/" target="_blank"
-                    >Cold Off the Press</a
+                  >Cold Off the Press</a
                   >
                 </li>
                 <li>
                   <a href="https://www.therefectorycafe.com/" target="_blank"
-                    >The Refectory Cafe</a
+                  >The Refectory Cafe</a
                   >
                 </li>
               </ul>
@@ -137,37 +139,37 @@
             <!-- Social Media -->
             <section>
               <h2>Follow Us!</h2>
-              <div id="socialLogos">
-                <div id="twitterIcon">
+              <div class="socialsList">
+                <div class="twitter">
                   <a href="https://www.twitter.com" target="_blank">
                     <img
-                      class="socialImages"
+                      class="socialLogo"
                       alt="Twitter link"
-                      src="images/Twitter_Social_Icon_Rounded_Square_Color.png"
-                    />
-                  </a>
-                </div>
-                <div id="fbIcon">
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img
-                      class="socialImages"
-                      src="images/f-ogo_RGB_HEX-58.png"
+                      src="images/twitterLogo.png"
+                      />
+                    </a>
+                  </div>
+                  <div class="facebook">
+                    <a href="https://www.facebook.com" target="_blank">
+                      <img
+                      class="socialLogo"
+                      src="images/fbLogo.png"
                       alt="facebook link"
-                    />
-                  </a>
-                </div>
+                      />
+                    </a>
+                  </div>
               </div>
             </section>
           </li>
         </ul>
       </aside>
     </div>
-
+    
     <footer>
       <ul>
         <li>
           <a href="mailto:fakeemail@gmail.com"
-            >Email us at Peak@peaktraining.com</a
+          >Email us at Peak@peaktraining.com</a
           >
         </li>
         <li>
@@ -176,7 +178,8 @@
       </ul>
       <h4>&copy;2023 PEAK Training</h4>
     </footer>
-
+  </div>
+    
     <!-- Navigation Script -->
     <script src="scripts/navScript.js" defer></script>
     <!-- MapBox API Script  -->

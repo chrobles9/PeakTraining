@@ -1,10 +1,14 @@
 // Mobile menu script
 function mobileMenu() {
-    var x = document.getElementById("myTopnav");
+    let x = document.getElementById("myTopnav");
     if (x.className === "navList") {
         x.className += " mobileMenu";
-    } else {
-        x.className = "navList";
-    }
+        document.getElementById('menuIcon').style.display = 'none'
+
+     } 
+    //else {
+    //     x.className = "navList";
+
+    // }
 }
 

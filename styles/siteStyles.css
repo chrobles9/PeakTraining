@@ -28,11 +28,17 @@ html {
   /*********** LAYOUT TESTING ***********/
   /* border: 1px solid red; */
 }
+
+
+
 body {
-  background-color: var(--mainBackground);
+  /* background-color: var(--mainBackground); */
+  background-color: #000;
   color: var(--mainFontColor);
-  width: 100%;
+  /* width: 75%; */
   margin: 0 auto;
+
+
 }
 h1,
 h2,
@@ -76,12 +82,14 @@ nav {
 }
 .navItem {
   flex: 1 1 100%;
+  /* padding: 1em; */
 }
 .navLinks {
   color: var(--secondFontColor);
   text-decoration: none;
   font-size: 1.5em;
   display: block;
+  padding: 0.5em;
 }
 .navItem:hover {
   background-color: #555;
@@ -105,6 +113,8 @@ nav {
 
   display: flex;
   flex-direction: row-reverse;
+
+  background-color: var(--mainBackground);
 }
 
 /*********** Mapbox Styles  ***********/
@@ -121,6 +131,10 @@ nav {
 }
 
 /********** Aside Styles  **********/
+.sideContent ul {
+  list-style: none;
+}
+
 /* Local Partners  */
 .partnerList {
   /* list-style-position: inside; */
@@ -138,6 +152,50 @@ nav {
   padding-right: 1%;
   padding-bottom: 1%;
   padding-left: 1%;
+}
+
+.socialsList {
+  display: flex;
+  size: 50%;
+  justify-content: space-around;
+}
+
+
+
+
+footer {
+  width: 100%;
+  background-color: #082FBE;
+  color: rgba(248,248,248,0.98);
+  text-align: center;
+  padding: 1em;
+  
+  background-image: url(../images/dumbells.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 5em auto;
+}
+
+footer ul {
+  list-style-type: none;
+  
+  /* margin: 0 auto; */
+}
+footer ul a {
+  text-decoration: none;
+  color: rgba(248,248,248,0.98);
+}
+
+footer ul a:hover {
+	background-color: #555555;
+	color: #FFFFFF;
+}
+
+.bodyGrid {
+  text-align:center;
+  display:grid;
+  grid-template-rows: 1fr auto;
+  min-height:70vh;
 }
 
 /*********** Smaller Viewport Styles  ***********/
@@ -170,5 +228,9 @@ nav {
   }
   .navList.mobileMenu {
     display: contents;
+  }
+
+  body {
+    width: 100%;
   }
 }
