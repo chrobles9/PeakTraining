@@ -37,14 +37,33 @@ body {
   color: var(--mainFontColor);
   /* width: 75%; */
   margin: 0 auto;
-
-
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.3em;
 }
 h1,
 h2,
 h3 {
-  /* font-family: 'Merriweather', serif; */
-  text-align: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 2em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+p{
+  text-align: left;
+  text-indent: 1em;
+  margin: 1em auto;
+}
+
+p, .mapContain, #trainBanner{
+  width: 85%;
 }
 
 /*********** Header Styles ***********/
@@ -108,8 +127,9 @@ nav {
 /* Content between navigation and footer  */
 .middleContainer {
   min-width: 350px;
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 2em;
 
   display: flex;
   flex-direction: row-reverse;
@@ -117,12 +137,35 @@ nav {
   background-color: var(--mainBackground);
 }
 
+main {
+  padding:0 2em 6em;
+}
+
+/* Styles for photo banner */
+#trainBanner{
+	background-image: url(../images/groupTrain.JPG);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: thin solid #000000;
+  margin: 2em auto;
+}
+
+#trainTitle{
+  margin:2em 1em;
+
+	/* border: thin solid #000000; */
+	background-color: #082FBE;
+	color: #fff;
+  text-align: center;
+}
+
+
+
 /*********** Mapbox Styles  ***********/
 /*********** Mapbox Container  ***********/
 .mapContain {
   margin: 0 auto;
   text-align: center;
-  width: 75%;
 }
 #peakMap {
   /* width: 75%; */
@@ -191,6 +234,7 @@ footer ul a:hover {
 	color: #FFFFFF;
 }
 
+/* Container that includes footer  */
 .bodyGrid {
   text-align:center;
   display:grid;
