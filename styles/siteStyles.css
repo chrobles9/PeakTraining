@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 /* Variables for portfolio's fonts and color themes */
+
+/* TODO: Style aside area  */
+
 :root {
   /* Main font color */
   --mainFontColor: #000;
@@ -29,40 +32,42 @@ html {
   /* border: 1px solid red; */
 }
 
-
-
 body {
   /* background-color: var(--mainBackground); */
   background-color: #000;
   color: var(--mainFontColor);
   /* width: 75%; */
   margin: 0 auto;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.3em;
 }
 h1,
-h2,
-h3 {
+h2 {
   text-align: left;
   margin: 0 auto;
 }
 
-h1{
+h1 {
   font-size: 2em;
   border-bottom: 2px solid #000;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
 
-
-
-p{
-  text-align: left;
-  text-indent: 1em;
-  margin: 1em auto;
+h3 {
+  margin: 0 auto;
+  text-align: center;
 }
 
-p, .mapContain, #trainBanner{
+p {
+  text-align: left;
+  text-indent: 1em;
+  margin: 1em auto 2em;
+}
+
+p,
+.mapContain,
+#trainBanner {
   width: 85%;
 }
 
@@ -138,28 +143,26 @@ nav {
 }
 
 main {
-  padding:0 2em 6em;
+  padding: 0 2em 6em;
 }
 
 /* Styles for photo banner */
-#trainBanner{
-	background-image: url(../images/groupTrain.JPG);
-	background-repeat: no-repeat;
-	background-position: center center;
-	border: thin solid #000000;
-  margin: 2em auto;
+#trainBanner {
+  background-image: url(../images/groupTrain.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: thin solid #000000;
+  margin: 3em auto;
 }
 
-#trainTitle{
-  margin:2em 1em;
+#trainTitle {
+  margin: 2em 1em;
 
-	/* border: thin solid #000000; */
-	background-color: #082FBE;
-	color: #fff;
+  /* border: thin solid #000000; */
+  background-color: #082fbe;
+  color: #fff;
   text-align: center;
 }
-
-
 
 /*********** Mapbox Styles  ***********/
 /*********** Mapbox Container  ***********/
@@ -174,8 +177,14 @@ main {
 }
 
 /********** Aside Styles  **********/
+.sideContent {
+  margin-top: 5.5em;
+  /* list-style: none; */
+  text-align: left;
+}
 .sideContent ul {
   list-style: none;
+  margin: 1em auto;
 }
 
 /* Local Partners  */
@@ -188,13 +197,27 @@ main {
   text-decoration: none;
 }
 .partnerList a:hover {
-  border: thin solid #000000;
   background-color: #082fbe;
   color: #ffffff;
-  padding-top: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%;
+}
+
+.bundle {
+  text-align: left;
+}
+.bundle p {
+  text-indent: 0;
+}
+
+.bundleLink{
+border-bottom: 4px double;  
+color: #000;
+text-decoration: none;
+}
+
+.bundleLink:hover {
+  background-color: #082fbe;
+  color: #ffffff;
+  border: none;
 }
 
 .socialsList {
@@ -203,43 +226,40 @@ main {
   justify-content: space-around;
 }
 
-
-
-
 footer {
   width: 100%;
-  background-color: #082FBE;
-  color: rgba(248,248,248,0.98);
+  background-color: #082fbe;
+  color: rgba(248, 248, 248, 0.98);
   text-align: center;
   padding: 1em;
-  
+
   background-image: url(../images/dumbells.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 5em auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 5em auto;
 }
 
 footer ul {
   list-style-type: none;
-  
+
   /* margin: 0 auto; */
 }
 footer ul a {
   text-decoration: none;
-  color: rgba(248,248,248,0.98);
+  color: rgba(248, 248, 248, 0.98);
 }
 
 footer ul a:hover {
-	background-color: #555555;
-	color: #FFFFFF;
+  background-color: #555555;
+  color: #ffffff;
 }
 
 /* Container that includes footer  */
 .bodyGrid {
-  text-align:center;
-  display:grid;
+  text-align: center;
+  display: grid;
   grid-template-rows: 1fr auto;
-  min-height:70vh;
+  min-height: 70vh;
 }
 
 /*********** Smaller Viewport Styles  ***********/
@@ -268,7 +288,6 @@ footer ul a:hover {
   }
   .icon:hover {
     background-color: #555;
-
   }
   .navList.mobileMenu {
     display: contents;
