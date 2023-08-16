@@ -61,7 +61,7 @@ h3 {
 
 p {
   text-align: left;
-  text-indent: 1em;
+  text-indent: 1.5em;
   margin: 1em auto 2em;
 }
 
@@ -201,17 +201,16 @@ main {
   color: #ffffff;
 }
 
-.bundle {
+.bundle > p {
+  text-indent: 0;
+  width: 100%;
   text-align: left;
 }
-.bundle p {
-  text-indent: 0;
-}
 
-.bundleLink{
-border-bottom: 4px double;  
-color: #000;
-text-decoration: none;
+.bundleLink {
+  border-bottom: 4px double;
+  color: #000;
+  text-decoration: none;
 }
 
 .bundleLink:hover {
@@ -224,6 +223,7 @@ text-decoration: none;
   display: flex;
   size: 50%;
   justify-content: space-around;
+  margin: 1em auto;
 }
 
 footer {
@@ -263,11 +263,14 @@ footer ul a:hover {
 }
 
 /*********** Smaller Viewport Styles  ***********/
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+  body {
+    width: 100%;
+  }
   .middleContainer {
     flex-direction: column;
   }
-  /* navigation list hidden with mobile  */
+  /***** Mobile Navigation and Header  *****/
   .navList {
     display: none;
   }
@@ -281,7 +284,6 @@ footer ul a:hover {
   .navList {
     flex-direction: column;
   }
-
   .icon {
     display: contents;
     font-size: 190%;
@@ -293,7 +295,65 @@ footer ul a:hover {
     display: contents;
   }
 
-  body {
-    width: 100%;
+  /********** Main content Styles  **********/
+  .middleContainer{
+    padding: 2em 0 0;
   }
+  /* main{
+    padding: 0
+  } */
+
+  /********** Aside Content Styles  **********/
+  .sideContent  {
+  width: 85%;
+  margin: 0 auto 3em;
+    text-align: center;
+}
+  /* .sideContent ul {
+  list-style: none;
+  margin: 1em auto;
+} */
+
+  /* Local Partners  */
+.sideContent h2{
+  text-align: center;
+}
+.sideContent{
+  /* text-align: center; */
+}
+  /* .partnerList {
+  list-style-type: none;
+} */
+  /* .partnerList a {
+  color: var(--mainFontColor);
+  text-decoration: none;
+} */
+  /* .partnerList a:hover {
+  background-color: #082fbe;
+  color: #ffffff;
+} */
+
+  .bundle > p {
+  text-indent: 1.5em;
+  width: 75%;
+}
+
+  /* .bundleLink {
+  border-bottom: 4px double;
+  color: #000;
+  text-decoration: none;
+} */
+
+  /* .bundleLink:hover {
+  background-color: #082fbe;
+  color: #ffffff;
+  border: none;
+} */
+
+  /* .socialsList {
+  display: flex;
+  size: 50%;
+  justify-content: space-around;
+  margin: 1em auto;
+} */
 }
