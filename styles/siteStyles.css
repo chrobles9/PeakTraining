@@ -268,6 +268,13 @@ footer ul a:hover {
   min-height: 70vh;
 }
 
+address > p{
+  text-align: center;
+  text-indent: 0;
+}
+
+
+
 /*********** Smaller Viewport Styles  ***********/
 @media (max-width: 900px) {
   h1{
