@@ -181,6 +181,12 @@ main {
   margin-top: 5.5em;
   /* list-style: none; */
   text-align: left;
+  /* font-size: 1em; */
+}
+
+.sideContent h2{
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .sideContent ul {
   list-style: none;
@@ -264,6 +270,9 @@ footer ul a:hover {
 
 /*********** Smaller Viewport Styles  ***********/
 @media (max-width: 900px) {
+  h1{
+    text-align: center;
+  }
   body {
     width: 100%;
   }
