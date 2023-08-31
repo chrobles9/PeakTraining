@@ -1,89 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>About Peak Training | Raleigh, NC</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Peak Training, a physical and virtual training gym located in Raleigh, NC."
-    />
-    <meta name="author" content="Carlos Robles" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <!-- Website Styles -->
-    <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <!--Company Logo in Header-->
-      <div class="logoContainer" aria-hidden="true">
-        <a href="index.html">
-          <img class="headerLogo" src="images/peakLogoFinal2.png" />
-        </a>
+
+<head>
+  <title>About Peak Training | Raleigh, NC</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peak Training, a physical and virtual training gym located in Raleigh, NC." />
+  <meta name="author" content="Carlos Robles" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Website Styles -->
+  <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <!--Company Logo in Header-->
+    <div class="logoContainer" aria-hidden="true">
+      <a href="index.html">
+        <img class="headerLogo" src="images/peakLogoFinal2.png" />
+      </a>
+    </div>
+    <!--Drop down menu and nav-->
+    <nav role="navigation" aria-label="Main Menu">
+      <!--Collapsed Nav Icon Style-->
+      <a href="javascript:void(0);" id="menuIcon" class="navLinks icon" onclick="mobileMenu()">&#9776;
+      </a>
+      <ul class="navList" id="myTopnav">
+        <li class="navItem">
+          <a href="index.html" class="navLinks">Home</a>
+        </li>
+        <!-- Current Site Active -->
+        <li class="active navItem">
+          <a href="about.html" class="navLinks">About Us</a>
+        </li>
+        <!-- TODO: Combine physical and virtual training on single page  -->
+        <li class="navItem">
+          <a href="training.html" class="navLinks">Training</a>
+        </li>
+        <li class="navItem">
+          <a href="contact.html" class="navLinks">Contact Us</a>
+        </li>
+      </ul>
       </div>
-      <!--Drop down menu and nav-->
-      <nav role="navigation" aria-label="Main Menu">
-        <!--Collapsed Nav Icon Style-->
-          <a
-            href="javascript:void(0);" id="menuIcon"
-            class="navLinks icon"
-            onclick="mobileMenu()"
-            >&#9776;
-          </a>
-          <ul class="navList" id="myTopnav">
-            <li class="navItem">
-              <a href="index.html" class="navLinks">Home</a>
-            </li>
-            <!-- Current Site Active -->
-            <li class="active navItem">
-              <a href="about.html" class="navLinks">About Us</a>
-            </li>
-            <!-- TODO: Combine physical and virtual training on single page  -->
-            <li class="navItem">
-              <a href="training.html" class="navLinks">Training</a>
-            </li>
-            <li class="navItem">
-              <a href="contact.html" class="navLinks">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    </nav>
+  </header>
 
-    <!-- Wrapper -->
-    <div class="bodyGrid">
-      <!-- Middle Content Container  -->
-      <div class="middleContainer">
-        <main>
-          <section>
-            <h1>About Peak Training</h1>
-            <p>Peak Training stands above others because we focus on giving you the skills to create the regimen you can use immediately. </p>
-            <p>Our seasoned trainers and constantly updated classes combine with workouts to challenge you. We don't rely on mindless mantras or fad workouts.</p>
-            <h3>We pride ourselves on our catering to clients who want the very best for themselves and their bodies.</h3>
+  <!-- Wrapper -->
+  <div class="bodyGrid">
+    <!-- Middle Content Container  -->
+    <div class="middleContainer">
 
-            <p>All of our classes and programs carry a 100% satisfaction guarantee. If for any reason you are not satisfied, simply notify your Peak Training advisor of your intent to withdraw prior to the next session, turn in your materials, and you will receive a full refund.</p>
+      <main>
+        <section>
+          <h1>About Peak Training</h1>
+          <p>Peak Training stands above others because we focus on giving you the skills to create the regimen you can
+            use immediately. </p>
+          <p>Our seasoned trainers and constantly updated classes combine with workouts to challenge you. We don't rely
+            on mindless mantras or fad workouts.</p>
+          <h3>We pride ourselves on our catering to clients who want the very best for themselves and their bodies.</h3>
+
+          <p>All of our classes and programs carry a 100% satisfaction guarantee. If for any reason you are not
+            satisfied, simply notify your Peak Training advisor of your intent to withdraw prior to the next session,
+            turn in your materials, and you will receive a full refund.</p>
 
           <!-- Website Banner  -->
           <div id="trainBanner">
             <h3 id="trainTitle">Come Train With Us!</h3>
           </div>
         </section>
-        
+
         <!--Peak Training MapBox Container-->
         <section class="mapContain">
           <!-- map container -->
           <div id="peakMap"></div>
         </section>
       </main>
-      
+
       <aside class="sideContent">
         <ul>
           <li>
@@ -92,26 +89,16 @@
               <h2>Local Partners</h2>
               <ul class="partnerList">
                 <li>
-                  <a
-                  href="https://www.cleanjuice.com/locations/renaissance-village/"
-                  >Clean Juice</a
-                  >
+                  <a href="https://www.cleanjuice.com/locations/renaissance-village/">Clean Juice</a>
                 </li>
                 <li>
-                  <a
-                  href="http://www.happyandhale.com/locations/"
-                  >Happy + Hale</a
-                  >
+                  <a href="http://www.happyandhale.com/locations/">Happy + Hale</a>
                 </li>
                 <li>
-                  <a href="https://www.coldoffthepress.com/"
-                  >Cold Off the Press</a
-                  >
+                  <a href="https://www.coldoffthepress.com/">Cold Off the Press</a>
                 </li>
                 <li>
-                  <a href="https://www.therefectorycafe.com/"
-                  >The Refectory Cafe</a
-                  >
+                  <a href="https://www.therefectorycafe.com/">The Refectory Cafe</a>
                 </li>
               </ul>
             </section>
@@ -134,33 +121,25 @@
               <div class="socialsList">
                 <div class="twitter">
                   <a href="https://www.twitter.com" class="socialLogo">
-                    <img
-                      alt="Twitter link"
-                      src="images/twitterLogo.png"
-                      />
-                    </a>
-                  </div>
-                  <div class="facebook">
-                    <a href="https://www.facebook.com" class="socialLogo">
-                      <img
-                      src="images/fbLogo.png"
-                      alt="facebook link"
-                      />
-                    </a>
-                  </div>
+                    <img alt="Twitter link" src="images/twitterLogo.png" />
+                  </a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com" class="socialLogo">
+                    <img src="images/fbLogo.png" alt="facebook link" />
+                  </a>
+                </div>
               </div>
             </section>
           </li>
         </ul>
       </aside>
     </div>
-    
+
     <footer>
       <ul>
         <li>
-          <a href="mailto:fakeemail@gmail.com"
-          >Email us at Peak@peaktraining.com</a
-          >
+          <a href="mailto:fakeemail@gmail.com">Email us at Peak@peaktraining.com</a>
         </li>
         <li>
           <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
@@ -169,10 +148,11 @@
       <h4>&copy;2023 PEAK Training</h4>
     </footer>
   </div>
-    
-    <!-- Navigation Script -->
-    <script src="scripts/navScript.js" defer></script>
-    <!-- MapBox API Script  -->
-    <script src="scripts/mapScript.js" defer></script>
-  </body>
+
+  <!-- Navigation Script -->
+  <script src="scripts/navScript.js" defer></script>
+  <!-- MapBox API Script  -->
+  <script src="scripts/mapScript.js" defer></script>
+</body>
+
 </html>
