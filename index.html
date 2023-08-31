@@ -1,76 +1,67 @@
 <!DOCTYPE html>
-<!-- TODO: Finish other pages  -->
 <html lang="en" dir="ltr">
-  <head>
-    <title>Peak Training Home | Raleigh, NC</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Peak Training, a physical and virtual training gym located in Raleigh, NC."
-    />
-    <meta name="author" content="Carlos Robles" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <!-- Website Styles -->
-    <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <!--Company Logo in Header-->
-      <div class="logoContainer" aria-hidden="true">
-        <a href="index.html">
-          <img class="headerLogo" src="images/peakLogoFinal2.png" />
-        </a>
-      </div>
-      <!--Drop down menu and nav-->
-      <nav role="navigation" aria-label="Main Menu">
-        <!--Collasped Nav Icon Style-->
-          <a
-            href="javascript:void(0);" id="menuIcon"
-            class="navLinks icon"
-            onclick="mobileMenu()"
-            >&#9776;
-          </a>
-          <ul class="navList" id="myTopnav">
-            <li class="active navItem">
-              <a href="index.html" class="navLinks">Home</a>
-            </li>
-            <li class="navItem">
-              <a href="about.html" class="navLinks">About Us</a>
-            </li>
-            <!-- TODO: Combine physical and virtual training on single page  -->
-            <li class="navItem">
-              <a href="training.html" class="navLinks">Training</a>
-            </li>
-            <li class="navItem">
-              <a href="contact.html" class="navLinks">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Wrapper -->
-    <div class="bodyGrid">
-      <!-- Middle Content Container  -->
-      <div class="middleContainer">
-        <main>
-          <section>
-            <h1>Welcome to Peak Training!</h1>
-            <h3>The Triangle's Top Fitness Choice</h3>
-            <p>
-              Peak Training has been the premier place for Triangle area residents to
-              get in shape, relieve stress and make new friends since 1990.
-            </p>
-            <p>
+<head>
+  <title>Peak Training Home | Raleigh, NC</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peak Training, a physical and virtual training gym located in Raleigh, NC." />
+  <meta name="author" content="Carlos Robles" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Website Styles -->
+  <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <!--Company Logo in Header-->
+    <div class="logoContainer" aria-hidden="true">
+      <a href="index.html">
+        <img class="headerLogo" src="images/peakLogoFinal2.png" />
+      </a>
+    </div>
+    <!--Drop down menu and nav-->
+    <nav role="navigation" aria-label="Main Menu">
+      <!--Collapsed Nav Icon Style-->
+      <a href="javascript:void(0);" id="menuIcon" class="navLinks icon" onclick="mobileMenu()">&#9776;
+      </a>
+      <ul class="navList" id="myTopnav">
+        <li class="active navItem">
+          <a href="index.html" class="navLinks">Home</a>
+        </li>
+        <li class="navItem">
+          <a href="about.html" class="navLinks">About Us</a>
+        </li>
+        <li class="navItem">
+          <a href="training.html" class="navLinks">Training</a>
+        </li>
+        <li class="navItem">
+          <a href="contact.html" class="navLinks">Contact Us</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Wrapper -->
+  <div class="bodyGrid">
+    <!-- Middle Content Container  -->
+    <div class="middleContainer">
+
+      <main>
+        <section>
+          <h1>Welcome to Peak Training!</h1>
+          <h3>The Triangle's Top Fitness Choice</h3>
+          <p>
+            Peak Training has been the premier place for Triangle area residents to
+            get in shape, relieve stress and make new friends since 1990.
+          </p>
+          <p>
             Peak offers an excellent fitness facility, a wide variety of
             constantly updated classes, seasoned physical trainers, reasonable
             membership rates, virtual classes and most importantly, ensuring the
@@ -80,18 +71,19 @@
             We pride ourselves on our catering to clients who want the very
             best.
           </p>
-                    <!-- Website Banner  -->
 
+          <!-- Website Banner  -->
           <div id="trainBanner">
             <h3 id="trainTitle">Come Train With Us!</h3>
           </div>
         </section>
-        
+
         <!--Peak Training MapBox Container-->
         <section class="mapContain">
           <!-- map container -->
           <div id="peakMap"></div>
         </section>
+
       </main>
       
       <aside class="sideContent">
@@ -102,26 +94,16 @@
               <h2>Local Partners</h2>
               <ul class="partnerList">
                 <li>
-                  <a
-                  href="https://www.cleanjuice.com/locations/renaissance-village/"
-                  >Clean Juice</a
-                  >
+                  <a href="https://www.cleanjuice.com/locations/renaissance-village/">Clean Juice</a>
                 </li>
                 <li>
-                  <a
-                  href="http://www.happyandhale.com/locations/"
-                  >Happy + Hale</a
-                  >
+                  <a href="http://www.happyandhale.com/locations/">Happy + Hale</a>
                 </li>
                 <li>
-                  <a href="https://www.coldoffthepress.com/"
-                  >Cold Off the Press</a
-                  >
+                  <a href="https://www.coldoffthepress.com/">Cold Off the Press</a>
                 </li>
                 <li>
-                  <a href="https://www.therefectorycafe.com/"
-                  >The Refectory Cafe</a
-                  >
+                  <a href="https://www.therefectorycafe.com/">The Refectory Cafe</a>
                 </li>
               </ul>
             </section>
@@ -144,33 +126,25 @@
               <div class="socialsList">
                 <div class="twitter">
                   <a href="https://www.twitter.com" class="socialLogo">
-                    <img
-                      alt="Twitter link"
-                      src="images/twitterLogo.png"
-                      />
-                    </a>
-                  </div>
-                  <div class="facebook">
-                    <a href="https://www.facebook.com" class="socialLogo">
-                      <img
-                      src="images/fbLogo.png"
-                      alt="facebook link"
-                      />
-                    </a>
-                  </div>
+                    <img alt="Twitter link" src="images/twitterLogo.png" />
+                  </a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com" class="socialLogo">
+                    <img src="images/fbLogo.png" alt="facebook link" />
+                  </a>
+                </div>
               </div>
             </section>
           </li>
         </ul>
       </aside>
     </div>
-    
+
     <footer>
       <ul>
         <li>
-          <a href="mailto:fakeemail@gmail.com"
-          >Email us at Peak@peaktraining.com</a
-          >
+          <a href="mailto:fakeemail@gmail.com">Email us at Peak@peaktraining.com</a>
         </li>
         <li>
           <a href="tel:+01-800-555-1212">Call us at (800) 555-1212</a>
@@ -179,10 +153,10 @@
       <h4>&copy;2023 PEAK Training</h4>
     </footer>
   </div>
-    
-    <!-- Navigation Script -->
-    <script src="scripts/navScript.js" defer></script>
-    <!-- MapBox API Script  -->
-    <script src="scripts/mapScript.js" defer></script>
-  </body>
+
+  <!-- Navigation Script -->
+  <script src="scripts/navScript.js" defer></script>
+  <!-- MapBox API Script  -->
+  <script src="scripts/mapScript.js" defer></script>
+</body>
 </html>
