@@ -1,1 +1,188 @@
-<!-- TODO: create video section  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- TODO: Fix footer for desktop -->
+<head>
+  <title>Peak Training Options | Raleigh, NC</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peak Training, a physical and virtual training gym located in Raleigh, NC." />
+  <meta name="author" content="Carlos Robles" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Website Styles -->
+  <link rel="stylesheet" href="styles/siteStyles.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <!--Company Logo in Header-->
+    <div class="logoContainer" aria-hidden="true">
+      <a href="index.html">
+        <img class="headerLogo" src="images/peakLogoFinal2.png" />
+      </a>
+    </div>
+    <!--Drop down menu and nav-->
+    <nav role="navigation" aria-label="Main Menu">
+      <!--Collapsed Nav Icon Style-->
+      <a href="javascript:void(0);" id="menuIcon" class="navLinks icon" onclick="mobileMenu()">&#9776;
+      </a>
+      <ul class="navList" id="myTopnav">
+        <li class="navItem">
+          <a href="index.html" class="navLinks">Home</a>
+        </li>
+        <li class="navItem">
+          <a href="about.html" class="navLinks">About Us</a>
+        </li>
+        <li class="active navItem">
+          <a href="training.html" class="navLinks">Training</a>
+        </li>
+        <li class="navItem">
+          <a href="contact.html" class="navLinks">Contact Us</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Wrapper -->
+  <div class="bodyGrid">
+    <!-- Middle Content Container  -->
+    <div class="middleContainer">
+
+      <main>
+        <section>
+
+
+
+
+
+
+          <!-- TODO: Add training content  -->
+          <h1>Training Options</h1>
+          <h3>Private 1-1 Training</h3>
+          <p>
+            Consists of 1 hr long private training sessions with one of ours expert physical trainers.
+          </p>
+          <section id="bundleTicket">
+            <h3>**5 Session Bundle Ticket**</h3>
+            <p> Bundle 5 personal training sessions together for a total of $2,795 ($540 worth of savings!) </p>
+          </section>
+          <h3>Group Fitness Training</h3>
+          <p>Group fitness classes consisting up to 15 people. Check schedule for weekly class rotation.</p>
+          <h3>Online Virtual Training</h3>
+          <p>Follow along with our expert trainers as they instruct you through your virtual home workout from the comfort of your
+            own living room workout space. </p>
+          
+          
+          <article>
+            <h1>Virtual Training Sample</h1>
+          
+          
+            <h3>Full Body Workout</h3>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ox0g3RxauBQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          
+          
+          </article>
+          
+          
+          
+          
+          
+
+
+          
+          
+          
+          <!-- Website Banner  -->
+          <div id="trainBanner">
+            <h3 id="trainTitle">Come Train With Us!</h3>
+          </div>
+          </section>
+
+        <!--Peak Training MapBox Container-->
+        <section class="mapContain">
+          <!-- map container -->
+          <div id="peakMap"></div>
+        </section>
+      </main>
+      
+      <aside class="sideContent">
+        <ul>
+          <li>
+            <!-- Local Partners -->
+            <section class="partners">
+              <h2>Local Partners</h2>
+              <ul class="partnerList">
+                <li>
+                  <a href="https://www.cleanjuice.com/locations/renaissance-village/">Clean Juice</a>
+                </li>
+                <li>
+                  <a href="http://www.happyandhale.com/locations/">Happy + Hale</a>
+                </li>
+                <li>
+                  <a href="https://www.coldoffthepress.com/">Cold Off the Press</a>
+                </li>
+                <li>
+                  <a href="https://www.therefectorycafe.com/">The Refectory Cafe</a>
+                </li>
+              </ul>
+            </section>
+          </li>
+          <!-- Bundle Deal -->
+          <li>
+            <section class="bundle">
+              <h2>5 Session Bundle Ticket:</h2>
+              <p>
+                Ask about our
+                <a href="training.html" class="bundleLink">5 session personal training bundle!</a>
+                (20% off)
+              </p>
+            </section>
+          </li>
+          <li>
+            <!-- Social Media -->
+            <section>
+              <h2>Follow Us!</h2>
+              <div class="socialsList">
+                <div class="twitter">
+                  <a href="https://www.twitter.com" class="socialLogo">
+                    <img alt="Twitter link" src="images/twitterLogo.png" />
+                  </a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com" class="socialLogo">
+                    <img src="images/fbLogo.png" alt="facebook link" />
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="mailto:fakeemail@gmail.com">Peak@peaktraining.com</a>
+        </li>
+        <li>
+          <a href="tel:+01-800-555-1212">(800) 555-1212</a>
+        </li>
+      </ul>
+      <h4>&copy;2023 PEAK Training</h4>
+    </footer>
+  </div>
+
+  <!-- Navigation Script -->
+  <script src="scripts/navScript.js" defer></script>
+  <!-- MapBox API Script  -->
+  <script src="scripts/mapScript.js" defer></script>
+</body>
+</html>
