@@ -10,7 +10,8 @@
   /* Secondary font color */
   --secondFontColor: #fff;
   /* Header Background color */
-  --headerBackground: #000;
+  /* --headerBackground: #000; */
+  --headerBackground: #000000;
   /* Site Background Color  */
   --mainBackground: #fff;
 }
@@ -77,10 +78,10 @@ p,
   width: 100%;
   height: auto;
   background-color: var(--headerBackground);
-  background-image: url(../images/headerPhoto.jpg);
+  background-image: url(../images/headerPhoto.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 650px auto;
+  background-size: 750px auto;
   text-align: center;
 }
 /* Peak training logo */
@@ -116,7 +117,9 @@ nav {
   padding: 0.5em;
 }
 .navItem:hover {
-  background-color: #555;
+  /* background-color: #555; */
+  background-color: #de630b;
+
 }
 .icon {
   display: none;
@@ -126,7 +129,10 @@ nav {
   /* text-align: center; */
 }
 .active:hover {
-  background-color: #de630b;
+  /* background-color: #de630b; */
+  background-color: #555;
+
+
 }
 
 /* Content between navigation and footer  */
