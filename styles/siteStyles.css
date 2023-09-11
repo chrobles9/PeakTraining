@@ -11,7 +11,8 @@
   /* --headerBackground: #000; */
   --headerBackground: #000000;
   /* Site Background Color  */
-  --mainBackground: #fff;
+  /* --mainBackground: #fff; */
+  --mainBackground: #dedede;
 }
 
 /*********** Universal box sizing with inheritance ***********/
@@ -227,6 +228,10 @@ main {
   background-color: #082fbe;
   color: #ffffff;
   border: none;
+}
+
+.circleIcon {
+  border-radius: 8px;
 }
 
 .socialsList {
