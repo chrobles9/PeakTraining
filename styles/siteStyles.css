@@ -8,10 +8,8 @@
   /* Secondary font color */
   --secondFontColor: #fff;
   /* Header Background color */
-  /* --headerBackground: #000; */
   --headerBackground: #000000;
   /* Site Background Color  */
-  /* --mainBackground: #fff; */
   --mainBackground: #dedede;
 }
 
@@ -31,12 +29,9 @@ html {
   /*********** LAYOUT TESTING ***********/
   /* border: 1px solid red; */
 }
-
 body {
-  /* background-color: var(--mainBackground); */
   background-color: #000;
   color: var(--mainFontColor);
-  /* width: 75%; */
   margin: 0 auto;
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.3em;
@@ -46,25 +41,21 @@ h2 {
   text-align: left;
   margin: 0 auto;
 }
-
 h1 {
   font-size: 2em;
   border-bottom: 2px solid #000;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
-
 h3 {
   margin: 0 auto;
   text-align: center;
 }
-
 p {
   text-align: left;
   text-indent: 1.5em;
   margin: 1em auto 2em;
 }
-
 p,
 .mapContain,
 #trainBanner {
@@ -106,7 +97,6 @@ nav {
 }
 .navItem {
   flex: 1 1 100%;
-  /* padding: 1em; */
 }
 .navLinks {
   color: var(--secondFontColor);
@@ -116,22 +106,16 @@ nav {
   padding: 0.5em;
 }
 .navItem:hover {
-  /* background-color: #555; */
   background-color: #de630b;
-
 }
 .icon {
   display: none;
 }
 .active {
   background-color: #082fbe;
-  /* text-align: center; */
 }
 .active:hover {
-  /* background-color: #de630b; */
   background-color: #555;
-
-
 }
 
 /* Content between navigation and footer  */
@@ -140,13 +124,10 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em;
-
   display: flex;
   flex-direction: row-reverse;
-
   background-color: var(--mainBackground);
 }
-
 main {
   padding: 0 2em 6em;
 }
@@ -159,11 +140,8 @@ main {
   border: thin solid #000000;
   margin: 3em auto;
 }
-
 #trainTitle {
   margin: 2em 1em;
-
-  /* border: thin solid #000000; */
   background-color: #082fbe;
   color: #fff;
   text-align: center;
@@ -178,18 +156,14 @@ main {
 #peakMap {
   width: 100%;
   height: 20em;
-  /* background-color: gray; */
 }
 
 /********** Aside Styles  **********/
 .sideContent {
   margin-top: 5.5em;
-  /* list-style: none; */
   text-align: left;
-  /* font-size: 1em; */
 }
-
-.sideContent h2{
+.sideContent h2 {
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -200,7 +174,6 @@ main {
 
 /* Local Partners  */
 .partnerList {
-  /* list-style-position: inside; */
   list-style-type: none;
 }
 .partnerList a {
@@ -211,59 +184,48 @@ main {
   background-color: #082fbe;
   color: #ffffff;
 }
-
 .bundle > p {
   text-indent: 0;
   width: 100%;
   text-align: left;
 }
-
 .bundleLink {
   border-bottom: 4px double;
   color: #000;
   text-decoration: none;
 }
-
 .bundleLink:hover {
   background-color: #082fbe;
   color: #ffffff;
   border: none;
 }
-
 .circleIcon {
   border-radius: 8px;
 }
-
 .socialsList {
   display: flex;
   size: 50%;
   justify-content: space-around;
   margin: 1em auto;
 }
-
 footer {
   width: 100%;
   background-color: #082fbe;
   color: rgba(248, 248, 248, 0.98);
   text-align: center;
   padding: 1em;
-
   background-image: url(../images/dumbells.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 5em auto;
 }
-
 footer ul {
   list-style-type: none;
-
-  /* margin: 0 auto; */
 }
 footer ul a {
   text-decoration: none;
   color: rgba(248, 248, 248, 0.98);
 }
-
 footer ul a:hover {
   background-color: #555555;
   color: #ffffff;
@@ -276,31 +238,27 @@ footer ul a:hover {
   grid-template-rows: 1fr auto;
   min-height: 70vh;
 }
-
-address > p{
+address > p {
   text-align: center;
   text-indent: 0;
 }
 
-
-
 /*********** Smaller Viewport Styles  ***********/
 @media (max-width: 900px) {
-  h1{
+  h1 {
     text-align: center;
   }
   body {
     width: 100%;
   }
-
   .bodyGrid {
-    display:block;
+    display: block;
     /* grid-template-rows: 1fr auto; */
   }
-
   .middleContainer {
     flex-direction: column;
   }
+
   /***** Mobile Navigation and Header  *****/
   .navList {
     display: none;
@@ -327,71 +285,27 @@ address > p{
   }
 
   /********** Main content Styles  **********/
-  .middleContainer{
+  .middleContainer {
     padding: 2em 0 0;
   }
-  /* main{
-    padding: 0
-  } */
-
-  .video{
+  .video {
     margin: 0 auto;
   }
 
   /********** Aside Content Styles  **********/
-  .sideContent  {
-  width: 85%;
-  margin: 0 auto 3em;
+  .sideContent {
+    width: 85%;
+    margin: 0 auto 3em;
     text-align: center;
-}
-
-.bundle > p {
-  text-align: center;
-  text-indent: 0;
-  width: 75%;
-}
-
-  /* .sideContent ul {
-  list-style: none;
-  margin: 1em auto;
-} */
+  }
+  .bundle > p {
+    text-align: center;
+    text-indent: 0;
+    width: 75%;
+  }
 
   /* Local Partners  */
-.sideContent h2{
-  text-align: center;
-}
-/* .sideContent{
-  text-align: center;
-} */
-  /* .partnerList {
-  list-style-type: none;
-} */
-  /* .partnerList a {
-  color: var(--mainFontColor);
-  text-decoration: none;
-} */
-  /* .partnerList a:hover {
-  background-color: #082fbe;
-  color: #ffffff;
-} */
-
-
-  /* .bundleLink {
-  border-bottom: 4px double;
-  color: #000;
-  text-decoration: none;
-} */
-
-  /* .bundleLink:hover {
-  background-color: #082fbe;
-  color: #ffffff;
-  border: none;
-} */
-
-  /* .socialsList {
-  display: flex;
-  size: 50%;
-  justify-content: space-around;
-  margin: 1em auto;
-} */
+  .sideContent h2 {
+    text-align: center;
+  }
 }
