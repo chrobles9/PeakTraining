@@ -132,6 +132,11 @@ main {
   padding: 0 2em 6em;
 }
 
+.video {
+  width: 90%;
+  height: 315px;
+}
+
 /* Styles for photo banner */
 #trainBanner {
   background-image: url(../images/groupTrain.JPG);
@@ -288,7 +293,7 @@ address > p {
   .middleContainer {
     padding: 2em 0 0;
   }
-  .video {
+  .videoContain {
     margin: 0 auto;
   }
 

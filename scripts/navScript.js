@@ -6,9 +6,5 @@ function mobileMenu() {
         document.getElementById('menuIcon').style.display = 'none'
 
      } 
-    //else {
-    //     x.className = "navList";
-
-    // }
 }
 
